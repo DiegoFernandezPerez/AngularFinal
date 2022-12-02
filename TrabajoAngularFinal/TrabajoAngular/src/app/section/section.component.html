@@ -1,0 +1,20 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>ValoracionMedia</th>
+      </tr>
+    </thead>
+<tbody>
+<tr *ngFor="let j of listaVideojuegos">
+    <td>{{j.id}}</td>
+    <td>{{j.titulo}}</td>
+    <td>{{j.valoracionMedia}}</td>
+    <td>{{j.compania}}</td>
+    <td><img [src]="j.image.src"></td>
+    <button routerLink="/detalle">Detalle</button>
+   <!-- <td>{{j.image}}</td>-->
+  </tr>
+</tbody>
+</table>
